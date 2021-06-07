@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661426F9266DCF3500B58931 /* TheResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661426F8266DCF3500B58931 /* TheResultController.swift */; };
 		662D17BF266B71C2007C4955 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662D17BE266B71C2007C4955 /* QuizBrain.swift */; };
 		66C7E3A0266B028200C90EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7E39F266B028200C90EF9 /* AppDelegate.swift */; };
 		66C7E3A2266B028200C90EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7E3A1266B028200C90EF9 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661426F8266DCF3500B58931 /* TheResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheResultController.swift; sourceTree = "<group>"; };
 		662D17BE266B71C2007C4955 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		66C7E39C266B028200C90EF9 /* AppEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C7E39F266B028200C90EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				66C7E3A1266B028200C90EF9 /* ViewController.swift */,
+				661426F8266DCF3500B58931 /* TheResultController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661426F9266DCF3500B58931 /* TheResultController.swift in Sources */,
 				66C7E3C0266B241000C90EF9 /* Questions.swift in Sources */,
 				66C7E3A2266B028200C90EF9 /* ViewController.swift in Sources */,
 				66C7E3A0266B028200C90EF9 /* AppDelegate.swift in Sources */,

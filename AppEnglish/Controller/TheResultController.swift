@@ -6,4 +6,10 @@
 //  Copyright © 2021 fit.tdc.vn. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TheReultController: UIViewController {
+    
+    @IBOutlet weak var lblResult: UILabel!
+    
+}

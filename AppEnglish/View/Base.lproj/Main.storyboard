@@ -38,19 +38,19 @@
                                         <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oq-JO-9YT">
-                                        <rect key="frame" x="0.0" y="11" width="374" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="11" width="374" height="114"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="75.5" width="374" height="418.5"/>
+                                        <rect key="frame" x="0.0" y="126" width="374" height="368"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
-                                        <rect key="frame" x="0.0" y="495" width="374.00000000000006" height="80"/>
+                                        <rect key="frame" x="0.0" y="495" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="ueD-qr-2mT"/>
                                         </constraints>
@@ -64,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
-                                        <rect key="frame" x="0.0" y="576" width="374.00000000000006" height="80"/>
+                                        <rect key="frame" x="0.0" y="576" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="fNm-VT-9Ox"/>
                                         </constraints>
@@ -78,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng0-a1-Vst">
-                                        <rect key="frame" x="0.0" y="657" width="374.00000000000006" height="80"/>
+                                        <rect key="frame" x="0.0" y="657" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="5R9-c8-m3O"/>
                                         </constraints>
@@ -92,7 +92,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Em-Eh-Xv1">
-                                        <rect key="frame" x="0.0" y="738" width="374.00000000000006" height="80"/>
+                                        <rect key="frame" x="0.0" y="738" width="374" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="fkn-yK-5rR"/>
                                         </constraints>
@@ -128,11 +128,72 @@
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="qFZ-tx-P0L"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="WIt-lZ-kWX"/>
                         <outlet property="scoreLabel" destination="4oq-JO-9YT" id="Ctd-34-pdk"/>
+                        <segue destination="PDg-qV-fhG" kind="show" identifier="QuizToResult" id="YRN-4X-gR7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="135.26785714285714"/>
+            <point key="canvasLocation" x="-6" y="167"/>
+        </scene>
+        <!--The Reult Controller-->
+        <scene sceneID="KuD-N8-wp3">
+            <objects>
+                <viewController id="PDg-qV-fhG" customClass="TheReultController" customModule="AppEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iKc-QB-4gs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-gO-Zas">
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="BGl-Tl-9Ke"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="L2U-UM-s1j">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Số điểm của bạn là 8/10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgN-Vt-n7g">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="737"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nI0-Zj-yYl">
+                                        <rect key="frame" x="0.0" y="738" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6lO-Pz-5A8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tiếp tục" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="XSd-k3-qcy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L2U-UM-s1j" firstAttribute="top" secondItem="PlH-cR-It5" secondAttribute="top" id="7OK-0r-rHl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L2U-UM-s1j" secondAttribute="trailing" id="Muv-WG-fjd"/>
+                            <constraint firstAttribute="bottom" secondItem="cfM-gO-Zas" secondAttribute="bottom" id="SUA-7N-lwu"/>
+                            <constraint firstItem="PlH-cR-It5" firstAttribute="bottom" secondItem="L2U-UM-s1j" secondAttribute="bottom" id="XPg-M8-7oJ"/>
+                            <constraint firstItem="L2U-UM-s1j" firstAttribute="leading" secondItem="iKc-QB-4gs" secondAttribute="leadingMargin" id="ehr-HV-PsG"/>
+                            <constraint firstItem="cfM-gO-Zas" firstAttribute="trailing" secondItem="PlH-cR-It5" secondAttribute="trailing" id="nY3-Q5-eZn"/>
+                            <constraint firstItem="cfM-gO-Zas" firstAttribute="leading" secondItem="PlH-cR-It5" secondAttribute="leading" id="yCn-6x-9nu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PlH-cR-It5"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="tgN-Vt-n7g" id="VEo-6h-PvR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEn-Eu-Wzv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-968" y="689"/>
         </scene>
     </scenes>
     <resources>
